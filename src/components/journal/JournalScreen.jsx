@@ -1,17 +1,19 @@
-import React from 'react'
-import {Sidebar} from './Sidebar'
-import {NothingSelected} from './NothingSelected'
+import React from "react";
+import { NoteScreen } from "../notes/NoteScreen";
+import { Sidebar } from "./Sidebar";
+// import {NothingSelected} from './NothingSelected'
 
 export const JournalScreen = () => {
-    return (
-        <div className="journal__main-content">
-            {/* <h1>JournalScreen</h1> */}
+  return (
+    <div className="journal__main-content">
+      <Sidebar />
 
-            <Sidebar />
-
-            <main>
-                <NothingSelected />
-            </main>
-        </div>
-    )
-}
+      <main>
+        
+        {/* <NothingSelected /> */}
+        <NoteScreen/>
+      
+      </main>
+    </div>
+  );
+};
